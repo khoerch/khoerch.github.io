@@ -2,6 +2,10 @@ body {
 	background-color: rgba(212, 206, 199, .8);
 }
 
-h1, p {
+h3, p {
 	color: rgba(247, 125, 0, 1);
+}
+
+h1 {
+	color: black;
 }
