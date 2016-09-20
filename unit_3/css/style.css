@@ -1,3 +1,6 @@
 body {
 	background: url("images/background_2.jpg");
 }
+p {
+	color: red;
+}
