@@ -5,25 +5,30 @@
 	box-sizing: border-box;
 }
 
-/*To create a relative path you need to create a path from the css file to the image
-on your computer. The "../" signifies going back one folder on your computer*/
+/*These are general settings to effect the majority of the 
+code on the page.
+
+To create a relative path you need to create a path from the 
+css file to the image on your computer. The "../" signifies going 
+back one folder on your computer*/
 body {
 	background: url("../images/background_4.jpg") fixed;
 	background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
 }
 
-/*I wasn't able to adjust the look of the links through the ID tags below?*/
+/*I wasn't able to adjust the look of the links through the ID tags 
+below?*/
 a {
 	text-decoration: none;
 	color: white;
 }
 
-/*I would like to learn how to fix the header to the top of the page? Messing around with the position 
+/*Header details. I would like to learn how to fix the header to the top of the page? Messing around with the position 
 led to some weird effects.*/
-header {
+nav {
 	width: 100%;
 	height: 40px;
 	background: rgba(0,0,0,.7);
@@ -35,6 +40,7 @@ header {
 	text-indent: 35px;
 }
 
+/*Footer details. I would like to flesh out more*/
 footer {
 	width: 100%;
 	height: 25px;
@@ -44,6 +50,7 @@ footer {
 	font-size: 16px;
 	padding: 2px;
 	text-indent: 35px;
+	font-style: italic;
 }
 
 h1, h2, h3 {
@@ -72,15 +79,21 @@ hr {
 
 #right {
 	margin: auto;
-	margin-top: 35px;
-	margin-bottom: 300px;
+	margin-top: 50px;
+	margin-bottom: 200px;
 }
 
 #start {
-	border: rgba(0,0,0,.7) 3px solid;
-	background: rgba(255,133,8,.8);
-	width: 95px;
+	border: rgba(0,0,0,.6) 3px solid;
+	border-radius: 10px;
+	background: rgba(255,100,8,.6);
+	color: rgba(0,0,0,.7);
+	letter-spacing: 2px;
+	word-spacing: 5px;
+	width: 270px;
 	margin: auto;
+	margin-top: 35px;
+	padding: 20px;
 }
 
 #videos, #photos, #written, #links {
