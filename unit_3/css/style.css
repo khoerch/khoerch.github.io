@@ -62,27 +62,34 @@ p {
 }
 
 img {
-	width: 50px;
-	height: 50px;
+	width: 75px;
+	height: 75px;
 }
 
 #left {
 	margin: auto;
-	max-width: 500px;
-	margin-top: 70px;
-	margin-bottom: 50px;
+	max-width: 800px;
+	margin-top: 45px;
+	font-size: 28px;
 }
 
-hr {
-	width: 500px;
+#left>p {
+	font-size: 22px;
 }
+
+/*Still trying to figure out this line*/
+/*hr {
+	width: 500px;
+}*/
 
 #right {
 	margin: auto;
-	margin-top: 50px;
-	margin-bottom: 200px;
+	margin-top: 45px;
+	margin-bottom: 170px;
+	font-size: 24px;
 }
 
+/*Start here button in orange*/
 #start {
 	border: rgba(0,0,0,.6) 3px solid;
 	border-radius: 10px;
@@ -94,14 +101,17 @@ hr {
 	margin: auto;
 	margin-top: 35px;
 	padding: 20px;
+	font-size: 18px;
 }
 
+/*Four white boxes on the bottom*/
 #videos, #photos, #written, #links {
-	width: 210px;
-	height: 210px;
-	border: white 4px solid;
+	width: 250px;
+	height: 250px;
+	border: white 6px solid;
 	margin: auto;
-	margin-top: 15px;
-	margin-bottom: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	padding: 15px;
+	font-size: 20px;
 }
