@@ -1,14 +1,22 @@
-/*This resets any defauly settings on the browser so things don't look off*/
+
+/*Reset: resets settings to adjust for diff browsers*/
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-/*These are general settings to effect the majority of the 
-code on the page.
 
-To create a relative path you need to create a path from the 
+/*This imports a font from Google fonts*/
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto';
+
+
+/*These are general settings to effect the majority of the 
+code on the page.*/
+
+/*To create a relative path you need to create a path from the 
 css file to the image on your computer. The "../" signifies going 
 back one folder on your computer*/
 body {
@@ -18,16 +26,23 @@ body {
 	background-size: cover;
 	text-align: center;
 }
-
 /*I wasn't able to adjust the look of the links through the ID tags 
 below?*/
 a {
 	text-decoration: none;
 	color: white;
 }
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif;
+}
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
 
 /*Header details. I would like to learn how to fix the header to the top of the page? Messing around with the position 
 led to some weird effects.*/
+
 nav {
 	width: 100%;
 	height: 40px;
@@ -35,64 +50,33 @@ nav {
 	color: white;
 	text-align: left;
 	font-size: 22px;
-	padding: 4px;
+	padding: 7px;
 	word-spacing: 35px;
 	text-indent: 35px;
 }
 
-/*Footer details. I would like to flesh out more*/
-footer {
-	width: 100%;
-	height: 25px;
-	background: rgba(0,0,0,.7);
-	color: white;
-	text-align: right;
-	font-size: 16px;
-	padding: 2px;
-	text-indent: 35px;
-	font-style: italic;
-}
 
-h1, h2, h3 {
-	font-family: 'Roboto', sans-serif;
-}
+/*Main Title/Intro*/
 
-p {
-	font-family: 'Open Sans', sans-serif;
-}
-
-img {
-	width: 75px;
-	height: 75px;
-}
-
-#left {
+#maintitle {
 	margin: auto;
 	max-width: 800px;
 	margin-top: 45px;
 	font-size: 28px;
 }
-
-#left>p {
+#maintitle>p {
 	font-size: 22px;
 }
 
 
-hr {
-	width: 500px;
-	margin: auto;
-	height: 3px;
-	background: black;
-	border: 0;
-}
+/*Shortcut to training schedule*/
 
-#right {
+#firstweek {
 	margin: auto;
 	margin-top: 45px;
 	margin-bottom: 170px;
 	font-size: 24px;
 }
-
 /*Start here button in orange*/
 #start {
 	border: rgba(0,0,0,.6) 3px solid;
@@ -108,6 +92,14 @@ hr {
 	font-size: 18px;
 }
 
+
+/*Four Directory Boxes at the bottom*/
+
+/*Four icons at the bottom*/
+.iconsfront {
+	width: 75px;
+	height: 75px;
+}
 /*Four white boxes on the bottom*/
 #videos, #photos, #written, #links {
 	width: 250px;
@@ -118,4 +110,19 @@ hr {
 	margin-bottom: 20px;
 	padding: 15px;
 	font-size: 20px;
+}
+
+
+/*Footer details. I would like to flesh out more*/
+
+footer {
+	width: 100%;
+	height: 25px;
+	background: rgba(0,0,0,.7);
+	color: white;
+	text-align: right;
+	font-size: 16px;
+	padding: 2px;
+	text-indent: 35px;
+	font-style: italic;
 }
