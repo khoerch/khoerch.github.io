@@ -1,5 +1,5 @@
 /*This imports a font from Google fonts*/
-@import 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Roboto|Scope+One';
 
 
 /*Reset: resets settings to adjust for diff browsers*/
@@ -27,10 +27,10 @@ a {
 	color: white;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 p {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 
@@ -42,7 +42,7 @@ nav {
 	background: rgba(0,0,0,.7);
 	color: white;
 	text-align: left;
-	font-size: 22px;
+	font-size: 20px;
 	padding: 4px;
 	word-spacing: 35px;
 	text-indent: 35px;
@@ -65,20 +65,18 @@ nav {
 #maintitle>p {
 	font-size: 22px;
 }
-/*Shortcut to training schedule*/
-#firstweek {
+#firstweek { /*Shortcut to training schedule*/
 	margin: auto;
 	margin-top: 45px;
 	margin-bottom: 170px;
 	font-size: 24px;
 }
-/*Start here button in orange*/
-#start {
+#start { /*Start here button in orange*/
 	display: block;
-	border: rgba(0,0,0,.6) 3px solid;
+	border: rgba(0,0,0,.8) 3px solid;
 	border-radius: 10px;
 	background: rgba(255,100,8,.6);
-	color: rgba(0,0,0,.7);
+	color: rgba(0,0,0,.9);
 	letter-spacing: 2px;
 	word-spacing: 5px;
 	width: 270px;
@@ -91,13 +89,11 @@ nav {
 
 
 /*Four Directory Boxes at the bottom*/
-/*Four icons at the bottom*/
-.iconsfront {
+.iconsfront { /*Four icons at the bottom*/
 	width: 75px;
 	height: 75px;
 }
-/*Four white boxes on the bottom*/
-#videos, #photos, #written, #links {
+#videos, #photos, #written, #links { /*Four white boxes on the bottom*/
 	display: block;
 	width: 250px;
 	height: 250px;
