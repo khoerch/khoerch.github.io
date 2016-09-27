@@ -1,6 +1,8 @@
+/*This imports a font from Google fonts*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto';
+
 
 /*Reset: resets settings to adjust for diff browsers*/
-
 * {
 	margin: 0;
 	padding: 0;
@@ -8,14 +10,8 @@
 }
 
 
-/*This imports a font from Google fonts*/
-
-@import 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto';
-
-
 /*These are general settings to effect the majority of the 
 code on the page.*/
-
 /*To create a relative path you need to create a path from the 
 css file to the image on your computer. The "../" signifies going 
 back one folder on your computer*/
@@ -26,8 +22,6 @@ body {
 	background-size: cover;
 	text-align: center;
 }
-/*I wasn't able to adjust the look of the links through the ID tags 
-below?*/
 a {
 	text-decoration: none;
 	color: white;
@@ -40,9 +34,8 @@ p {
 }
 
 
-/*Header details. I would like to learn how to fix the header to the top of the page? Messing around with the position 
-led to some weird effects.*/
-
+/*Header details. I would like to learn how to fix the header to the top of 
+the page? Messing around with the position led to some weird effects.*/
 nav {
 	width: 100%;
 	height: 40px;
@@ -53,11 +46,16 @@ nav {
 	padding: 4px;
 	word-spacing: 35px;
 	text-indent: 35px;
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 
 
 /*Main Title/Intro*/
-
+#hero {
+	margin: 120px;
+}
 #maintitle {
 	margin: auto;
 	max-width: 800px;
@@ -67,10 +65,7 @@ nav {
 #maintitle>p {
 	font-size: 22px;
 }
-
-
 /*Shortcut to training schedule*/
-
 #firstweek {
 	margin: auto;
 	margin-top: 45px;
@@ -79,6 +74,7 @@ nav {
 }
 /*Start here button in orange*/
 #start {
+	display: block;
 	border: rgba(0,0,0,.6) 3px solid;
 	border-radius: 10px;
 	background: rgba(255,100,8,.6);
@@ -89,12 +85,12 @@ nav {
 	margin: auto;
 	margin-top: 35px;
 	padding: 20px;
-	font-size: 18px;
+	font-size: 22px;
+	font-weight: bold;
 }
 
 
 /*Four Directory Boxes at the bottom*/
-
 /*Four icons at the bottom*/
 .iconsfront {
 	width: 75px;
@@ -102,6 +98,7 @@ nav {
 }
 /*Four white boxes on the bottom*/
 #videos, #photos, #written, #links {
+	display: block;
 	width: 250px;
 	height: 250px;
 	border: white 6px solid;
@@ -114,7 +111,6 @@ nav {
 
 
 /*Footer details. I would like to flesh out more*/
-
 footer {
 	width: 100%;
 	height: 25px;
