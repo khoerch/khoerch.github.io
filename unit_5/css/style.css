@@ -1,0 +1,143 @@
+/*This imports a font from Google fonts*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Roboto|Scope+One';
+
+
+/*Reset: resets settings to adjust for diff browsers*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/*THIS IS SOME UNIT 5 STUFF. DELETE LATER*/
+nav {
+	background-color: #E8C66A;
+	border: 1px black solid;
+	padding: 20px;
+}
+header {
+	background-color: #FFED74;
+	border: 1px black solid;
+	padding: 20px;
+}
+section {
+	background-color: #FFE2B8;
+	border: 1px black solid;
+	padding: 20px;
+}
+footer {
+	background-color: #FF957E;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+
+/*These are general settings to effect the majority of the 
+code on the page.*/
+/*To create a relative path you need to create a path from the 
+css file to the image on your computer. The "../" signifies going 
+back one folder on your computer*/
+body {
+	background: url("../images/background_4.jpg") fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+}
+p {
+	font-family: 'Roboto', sans-serif;
+}
+
+
+/*Header details. I would like to learn how to fix the header to the top of 
+the page? Messing around with the position led to some weird effects.*/
+nav {
+	width: 100%;
+	height: 40px;
+	background: rgba(0,0,0,.7);
+	color: white;
+	text-align: left;
+	font-size: 20px;
+	padding: 4px;
+	word-spacing: 35px;
+	text-indent: 35px;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+
+/*Main Title/Intro*/
+#hero {
+	margin: 120px;
+}
+#maintitle {
+	margin: auto;
+	max-width: 800px;
+	margin-top: 45px;
+	font-size: 28px;
+}
+#maintitle>p {
+	font-size: 22px;
+}
+#firstweek { /*Shortcut to training schedule*/
+	margin: auto;
+	margin-top: 45px;
+	margin-bottom: 170px;
+	font-size: 24px;
+}
+#start { /*Start here button in orange*/
+	display: block;
+	border: rgba(0,0,0,.8) 3px solid;
+	border-radius: 10px;
+	background: rgba(255,100,8,.6);
+	color: rgba(0,0,0,.9);
+	letter-spacing: 2px;
+	word-spacing: 5px;
+	width: 270px;
+	margin: auto;
+	margin-top: 35px;
+	padding: 20px;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+
+/*Four Directory Boxes at the bottom*/
+.iconsfront { /*Four icons at the bottom*/
+	width: 75px;
+	height: 75px;
+}
+#videos, #photos, #written, #links { /*Four white boxes on the bottom*/
+	display: block;
+	width: 250px;
+	height: 250px;
+	border: white 6px solid;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 15px;
+	font-size: 20px;
+}
+
+
+/*Footer details. I would like to flesh out more*/
+footer {
+	width: 100%;
+	height: 25px;
+	background: rgba(0,0,0,.7);
+	color: white;
+	text-align: right;
+	font-size: 16px;
+	padding: 2px;
+	text-indent: 35px;
+	font-style: italic;
+}
