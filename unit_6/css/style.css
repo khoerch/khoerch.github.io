@@ -1,0 +1,176 @@
+/*This imports a font from Google fonts*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Roboto|Scope+One';
+
+
+/*GENERAL SETTINGS 
+to effect the majority of the 
+code on the page.*/
+/*To create a relative path you need to create a path from the 
+css file to the image on your computer. The "../" signifies going 
+back one folder on your computer*/
+body {
+	background: url("../images/background_4.jpg") fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+}
+p {
+	font-size: 1.25em;
+}
+h1 {
+	font-size: 3.3em;
+	font-weight: 600;
+}
+h2 {
+	font-size: 2.5em;
+}
+h3 {
+	font-size: 2em;
+}
+h4 {
+	font-size: 1.5em;
+}
+h5 {
+	font-size: 1em;
+}
+h6 {
+	font-size: .75em;
+}
+.clearfix:after {
+	visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+/*HEADER*/
+nav {
+	width: 100%;
+	height: 35px;
+	background: rgba(0,0,0,.7);
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.nav {
+	height: 30px;
+	float: left;
+	display: block;
+	list-style: none;
+	color: white;
+	padding: 5px 15px 0px 15px;
+	text-indent: 5px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5em;
+}
+/*Need to have hover come before active. Not sure if i like light to dark 
+or dark to light better*/
+.nav:hover {
+	background: rgba(255,100,8,1);
+}
+.nav:active {
+	background: rgba(255,100,8,.6);
+}
+
+/*MAIN TITLE*/
+#maintitle {
+	float: left;
+	width: 48%;
+	min-width: 250px;
+	margin-top: 150px;
+	padding: 0 2% 0 10%;
+}
+#maintitle>h4 {
+	margin-top: 1em;
+}
+#firstweek { /*Shortcut to training schedule*/
+	float: left;
+	width: 28%;
+	margin-top: 175px;
+	padding: 0 10% 0 2%;
+}
+#start { /*Start here button in orange*/
+	display: block;
+	border: rgba(0,0,0,.8) 3px solid;
+	border-radius: 10px;
+	background: rgba(255,100,8,.7);
+	color: rgba(0,0,0,.9);
+	letter-spacing: 2px;
+	word-spacing: 5px;
+	width: 270px;
+	margin: auto;
+	margin-top: 35px;
+	padding: 20px;
+	font-size: 1.2em;
+}
+#start:hover {
+	background: rgba(255,100,8,1);
+}
+#start:active {
+	background: rgba(0,0,0,.5);
+}
+
+/*FOUR BOXES*/
+#whiteboxes {
+	margin-top: 200px;
+}
+.boxes_div {
+	float: left;
+	width: 25%;
+	min-width: 300px;
+}
+.fa {
+	font-size: 3em;
+}
+.boxes_links { /*Four white boxes on the bottom*/
+	display: block;
+	width: 250px;
+	height: 250px;
+	border: white 6px solid;
+	border-radius: 20px;
+	padding: 15px;
+	margin: auto;
+	background: rgba(0,0,0,.5);
+}
+.boxes_links>h3 {
+	margin-top: .4em;
+}
+.boxes_links>p {
+	margin-top: .8em;
+	font-size: 1.32em;
+	font-weight: 300;
+}
+.boxes_links:hover {
+	background: rgba(255,100,8,.7);
+}
+.boxes_links:active {
+	background: rgba(255,100,8,1);
+}
+
+/*FOOTER*/
+/*I would like to flesh out more*/
+footer {
+	width: 100%;
+	height: 1.2em;
+	background: rgba(0,0,0,.7);
+	color: white;
+	text-align: right;
+	padding: 2px;
+	font-style: italic;
+	position: fixed;
+	bottom: 0;
+}
+footer>p {
+	margin-right: 10px;
+}
