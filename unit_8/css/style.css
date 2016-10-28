@@ -2,15 +2,8 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Roboto|Scope+One';
 
 
-/*Reset: resets settings to adjust for diff browsers*/
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-
-/*These are general settings to effect the majority of the 
+/*GENERAL SETTINGS 
+to effect the majority of the 
 code on the page.*/
 /*To create a relative path you need to create a path from the 
 css file to the image on your computer. The "../" signifies going 
@@ -21,6 +14,8 @@ body {
 	background-position: center;
 	background-size: cover;
 	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
 }
 a {
 	text-decoration: none;
@@ -30,59 +25,90 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Raleway', sans-serif;
 }
 p {
-	font-family: 'Roboto', sans-serif;
+	font-size: 1.25em;
+}
+h1 {
+	font-size: 3.3em;
+	font-weight: 600;
+}
+h2 {
+	font-size: 2.5em;
+}
+h3 {
+	font-size: 2em;
+}
+h4 {
+	font-size: 1.5em;
+}
+h5 {
+	font-size: 1em;
+}
+h6 {
+	font-size: .75em;
+}
+.clearfix:after {
+	visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
 }
 
-
-/*Header details*/
+/*HEADER*/
 nav {
 	width: 100%;
-	height: 40px;
+	height: 35px;
 	background: rgba(0,0,0,.7);
 	position: fixed;
 	top: 0;
 	left: 0;
 }
 .nav {
+	height: 30px;
 	float: left;
 	display: block;
 	list-style: none;
 	color: white;
-	font-size: 25px;
-	padding: 4px;
-	margin: 0 15px 0 15px;
+	padding: 5px 15px 0px 15px;
 	text-indent: 5px;
 	font-family: 'Raleway', sans-serif;
-	font-weight: 600;
+	font-size: 1.5em;
 }
+/*Need to have hover come before active. Not sure if i like light to dark 
+or dark to light better*/
 .nav:hover {
+	background: rgba(255,100,8,1);
+}
+.nav:active {
 	background: rgba(255,100,8,.6);
 }
+#hamburger {
+	visibility: hidden;
+}
 
-/*Main Title/Intro*/
-#hero {
-	margin: 120px;
-}
+/*MAIN TITLE*/
 #maintitle {
-	margin: auto;
-	max-width: 800px;
-	margin-top: 45px;
-	font-size: 28px;
+	float: left;
+	width: 48%;
+	min-width: 250px;
+	margin-top: 150px;
+	padding: 0 2% 0 10%;
 }
-#maintitle>p {
-	font-size: 22px;
+#maintitle>h4 {
+	margin-top: 1em;
 }
 #firstweek { /*Shortcut to training schedule*/
-	margin: auto;
-	margin-top: 45px;
-	margin-bottom: 170px;
-	font-size: 24px;
+	float: left;
+	width: 28%;
+	margin-top: 175px;
+	padding: 0 10% 0 2%;
 }
 #start { /*Start here button in orange*/
 	display: block;
 	border: rgba(0,0,0,.8) 3px solid;
 	border-radius: 10px;
-	background: rgba(255,100,8,.6);
+	background: rgba(255,100,8,.7);
 	color: rgba(0,0,0,.9);
 	letter-spacing: 2px;
 	word-spacing: 5px;
@@ -90,38 +116,95 @@ nav {
 	margin: auto;
 	margin-top: 35px;
 	padding: 20px;
-	font-size: 22px;
-	font-weight: bold;
+	font-size: 1.2em;
+}
+#start:hover {
+	background: rgba(255,100,8,1);
+}
+#start:active {
+	background: rgba(0,0,0,.5);
 }
 
-
-/*Four Directory Boxes at the bottom*/
-.iconsfront { /*Four icons at the bottom*/
-	width: 75px;
-	height: 75px;
+/*FOUR BOXES*/
+#whiteboxes {
+	margin-top: 200px;
 }
-#videos, #photos, #written, #links { /*Four white boxes on the bottom*/
+.boxes_div {
+	float: left;
+	width: 25%;
+	min-width: 300px;
+}
+.fa {
+	font-size: 3em;
+}
+.boxes_links { /*Four white boxes on the bottom*/
 	display: block;
 	width: 250px;
 	height: 250px;
 	border: white 6px solid;
-	margin: auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	border-radius: 20px;
 	padding: 15px;
-	font-size: 20px;
+	margin: auto;
+	background: rgba(0,0,0,.5);
+}
+.boxes_links>h3 {
+	margin-top: .4em;
+}
+.boxes_links>p {
+	margin-top: .8em;
+	font-size: 1.32em;
+	font-weight: 300;
+}
+.boxes_links:hover {
+	background: rgba(255,100,8,.7);
+}
+.boxes_links:active {
+	background: rgba(255,100,8,1);
 }
 
-
-/*Footer details. I would like to flesh out more*/
+/*FOOTER*/
+/*I would like to flesh out more*/
 footer {
 	width: 100%;
-	height: 25px;
+	height: 1.2em;
 	background: rgba(0,0,0,.7);
 	color: white;
 	text-align: right;
-	font-size: 16px;
 	padding: 2px;
-	text-indent: 35px;
 	font-style: italic;
+	position: fixed;
+	bottom: 0;
+}
+footer>p {
+	margin-right: 10px;
+}
+
+/*Media Queries*/
+/*These are conditional style settings to adjust for smaller screen sizes*/
+@media screen only and (max-width: 1215px) {
+	.boxes_div {
+		float: none;
+		width: auto;
+		display: block;
+
+	}
+	#maintitle, #firstweek {
+		float: none;
+		width: auto;
+	}
+}
+@media screen only and (max-width: 650px) {
+	#hamburger {
+		visibility: visible;
+		height: 30px;
+		float: left;
+		display: block;
+		list-style: none;
+		color: white;
+		padding: 5px 15px 0px 15px;
+		text-indent: 5px;
+	}
+	.nav {
+		visibility: hidden;
+	}
 }

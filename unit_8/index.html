@@ -2,12 +2,19 @@
 <html lang="en">
 <head>
 	<title>ATA Training Website</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Below is a link to the icon pack by Font Awesome. Testing it out to see how it works -->
+	<link rel="stylesheet" type="text/css" href="../icon_packs/font-awesome/css/font-awesome.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<!-- Main Header and Nav -->
-	<header id="hero">
+	<header id="hero" class="clearfix">
 		<nav>
+			<a id="hamburger" href="#">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</a>
 			<a class="nav" href="#">Home</a>
 			<a class="nav" href="#">Videos</a>
 			<a class="nav" href="#">Instructions</a>
@@ -16,7 +23,7 @@
 		</nav>
 		<section id="maintitle">
 			<h1>Reservations Training Center</h1>
-			<p>This website is your guide to becoming a Reservations Specialist. All of the info you'll need, including videos, written instructions, and more, can be found right here. Jump right in!</p>
+			<h4>This website is your guide to becoming a Reservations Specialist. All of the info you'll need, including videos, written instructions, and more, can be found right here. Jump right in!</h4>
 		</section>
 		<!-- Shortcut to training schedule for new employees -->
 		<aside id="firstweek">
@@ -26,31 +33,39 @@
 	</header>
 
 	<!-- The following four boxes will ideally line up horizontally across the page. Hopefully learn about the formatting in the following units -->
-	<section id="box_links">
+	<section id="whiteboxes" class="clearfix">
 		<!-- Video Gallery Button  -->
-		<a id="videos" href="#">
-			<img class="iconsfront" src="images/videos.png" alt="Videos" title="Training Videos">
-			<h3>Videos</h3>
-			<p>Follow along with dozens of in-depth training videos!</p>
-		</a>
+		<div class="boxes_div">
+			<a class="boxes_links" href="#">
+				<i class="fa fa-video-camera fa-5x" aria-hidden="true"></i>
+				<h3>Videos</h3>
+				<p>Follow along with dozens of in-depth training videos!</p>
+			</a>
+		</div>
 		<!-- Written Instructions Button -->
-		<a id="written" href="#">
-			<img class="iconsfront" src="images/written.png" alt="Written Instructions" title="Written Instructions">
-			<h3>Written Instructions</h3>
-			<p>Quickly find instructions on any Reservations task!</p>
-		</a>
+		<div class="boxes_div">
+			<a class="boxes_links" href="#">
+				<i class="fa fa-pencil fa-5x" aria-hidden="true"></i>
+				<h3>Written Instructions</h3>
+				<p>Quickly find instructions on any Reservations task!</p>
+			</a>
+		</div>
 		<!-- Photo Gallery Button -->
-		<a id="photos" href="#">
-			<img class="iconsfront" src="images/photos.png" alt="Photo Gallery" title="Photo Gallery">
-			<h3>Photo Gallery</h3>
-			<p>Want to get a deeper understanding of our trips? Look through the galleries here!</p>
-		</a>
+		<div class="boxes_div">
+			<a class="boxes_links" href="#">
+				<i class="fa fa-picture-o fa-5x" aria-hidden="true"></i>
+				<h3>Photo Gallery</h3>
+				<p>Want to get a deeper understanding of our trips? Look through the galleries here!</p>
+			</a>
+		</div>
 		<!-- External Resources Button -->
-		<a id="links" href="#">
-			<img class="iconsfront" src="images/link.png" alt="Important Resources" title="Important Resources">
-			<h3>Important Resources</h3>
-			<p>Look here for links to other important resources you'll need!</p>
-		</a>
+		<div class="boxes_div">
+			<a class="boxes_links" href="#">
+				<i class="fa fa-link fa-5x" aria-hidden="true"></i>
+				<h3>Important Resources</h3>
+				<p>Look here for links to other important resources you'll need!</p>
+			</a>
+		</div>
 	</section>
 
 	<footer>
